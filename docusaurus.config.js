@@ -35,10 +35,10 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en"],
+  // },
 
   presets: [
     [
@@ -150,10 +150,10 @@ const config = {
             label: "更多资源",
             position: "right",
             items: [
-              {
-                label: "API 文档",
-                to: "/docs/api",
-              },
+              // {
+              //   label: "API 文档",
+              //   to: "/docs/api",
+              // },
               {
                 label: "示例项目",
                 href: "https://github.com/facebook/docusaurus/tree/main/examples",
