@@ -105,18 +105,18 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "My Site",
+        title: "Hand-Telecom Site",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.svg",
         },
         items: [
-          {
-            type: "docSidebar",
-            sidebarId: "all",
-            position: "left",
-            label: "All",
-          },
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "all",
+          //   position: "left",
+          //   label: "All",
+          // },
           {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
