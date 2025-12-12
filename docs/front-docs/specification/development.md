@@ -3,28 +3,33 @@ sidebar_position: 2
 sidebar_label: "开发规范"
 ---
 
-# Manage Docs Versions
+# 开发规范
 
-Docusaurus can manage multiple versions of your docs.
+开发工具及代码风格、模块划分和代码开发规范
 
-## Create a docs version
+## 开发工具
 
-Release a version 1.0 of your project:
+- 统一使用 `VSCode` 编辑器
+- 安装 `Prettier` 插件，统一代码格式
+- 安装 `ESLint` 插件，统一代码规范
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+![分支流转流程](./img/vscode.png)
+![分支流转流程](./img/prettier.png)
+![分支流转流程](./img/eslint.png)
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+## 模块划分
 
-Your docs now have 2 versions:
+1. 命名方式
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+- **文件夹**统一使用-连接，例：`home-page`
+- **js/ts/css 文件**统一使用驼峰命名，例：`homePage`
+- **组件**以帕斯卡规则命名，例：`HomePage`
 
-## Add a Version Dropdown
+2. 模块结构
 
-To navigate seamlessly across versions, add a version dropdown.
+- 页面入口模块结构需要与路由层级保持一致，入口文件统一命名为 index.vue
+- 业务组件统一放到 index.vue 入口文件的同级 `components` 目录下
+- 如果需要使用钩子函数，统一放至 `hooks` 目录下，文件名以驼峰规则命名
 
 Modify the `docusaurus.config.js` file:
 
