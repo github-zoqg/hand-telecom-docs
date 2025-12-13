@@ -7,7 +7,9 @@ sidebar_label: "git规范"
 
 ## 推荐学习文档
 
-[菜鸟 Git 教程](https://liaoxuefeng.com/books/git/introduction/index.html)（快速掌握 Git 基础操作）
+[廖雪峰的 Git 教程](https://liaoxuefeng.com/books/git/introduction/index.html)
+[菜鸟 Git 教程](https://www.runoob.com/git/git-tutorial.html)
+（快速掌握 Git 基础操作）
 
 ## 分支流转流程
 
