@@ -13,9 +13,9 @@ sidebar_label: "开发规范"
 - 安装 `Prettier` 插件，统一代码格式
 - 安装 `ESLint` 插件，统一代码规范
 
-![分支流转流程](./img/vscode.png)
-![分支流转流程](./img/prettier.png)
-![分支流转流程](./img/eslint.png)
+![vscode](./img/vscode.png)
+![prettier](./img/prettier.png)
+![eslint](./img/eslint.png)
 
 ## 模块划分
 
@@ -31,31 +31,20 @@ sidebar_label: "开发规范"
 - 业务组件统一放到 index.vue 入口文件的同级 `components` 目录下
 - 如果需要使用钩子函数，统一放至 `hooks` 目录下，文件名以驼峰规则命名
 
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: "docsVersionDropdown",
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
 ```
-
-The docs version dropdown appears in your navbar:
-
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
-
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+├── pages
+│  ├── account
+│  │  ├── account-close
+│  │  │  ├── components
+│  │  │  │  ├── CloseAccountForm.vue
+│  │  │  │  ├── CloseAccountTable.vue
+│  │  │  │  ├── DetailModal.vue
+│  │  │  │  └── lov
+│  │  │  │    ├── BussinessLov.vue
+│  │  │  │    └── PeriodLov.vue
+│  │  │  ├── hooks
+│  │  │  │  ├── useClose.ts
+│  │  │  │  ├── useDayjs.ts
+│  │  │  │  └── useDetailModal.ts
+│  │  │  ├── index.vue
+```
