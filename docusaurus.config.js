@@ -117,18 +117,18 @@ const config = {
           //   position: "left",
           //   label: "All",
           // },
-          {
-            type: "docSidebar",
-            sidebarId: "tutorialSidebar",
-            position: "left",
-            label: "Tutorial",
-          },
-          {
-            type: "docSidebar",
-            sidebarId: "tutorial-basics",
-            label: "tutorial-basics",
-            position: "left",
-          },
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "tutorialSidebar",
+          //   position: "left",
+          //   label: "Tutorial",
+          // },
+          // {
+          //   type: "docSidebar",
+          //   sidebarId: "tutorial-basics",
+          //   label: "tutorial-basics",
+          //   position: "left",
+          // },
           {
             type: "docSidebar",
             sidebarId: "front-docs",
@@ -139,7 +139,7 @@ const config = {
             type: "docSidebar",
             docsPluginId: "docs2", // 关联到上面定义的插件实例
             sidebarId: "docs2", // ✅ 存在且非空
-            label: "快速开始2",
+            label: "其他文档2",
             position: "left",
           },
           { to: "/blog", label: "Blog", position: "left" },
