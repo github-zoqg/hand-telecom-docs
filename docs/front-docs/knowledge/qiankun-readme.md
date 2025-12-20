@@ -15,10 +15,10 @@ sidebar_label: "微前端-qiankun"
 import { registerMicroApps, start } from "qiankun";
 registerMicroApps([
   {
-    name: "app1",
+    name: "appPocFront",
     entry: "//localhost:8081",
     container: "#sub-app",
-    activeRule: "/xcerp-poc",
+    activeRule: "/appPocFront",
   },
   // ...其他子应用
 ]);
@@ -40,8 +40,8 @@ const router = createRouter({
   routes: [
     // 子应用路由
     {
-      path: "/xcerp-poc/:pathMatch(.*)*",
-      name: "XcerpPoc",
+      path: "/appPocFront/:pathMatch(.*)*",
+      name: "xcerpPoc",
       component: Layout,
     },
   ],
@@ -62,7 +62,7 @@ const router = createRouter({
 export default ({ mode }: ConfigEnv): UserConfig => {
   return {
     plugins: [
-      qiankun("xcerp-poc", {
+      qiankun("appPocFront", {
         // 微应用名称，与主应用注册时一致
         useDevMode: true,
       }),
