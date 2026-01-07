@@ -32,6 +32,17 @@ sidebar_label: "开发规范"
 - 业务组件统一放到 index.vue 入口文件的同级 `components` 目录下
 - 如果需要使用组合式函数，统一放至 `hooks` 目录下，文件名以驼峰规则命名
 
+```js
+  {
+    path: '/appGlcFront/account/accountClose',
+    name: 'closeLedgerCheck',
+    component: () => import('~/pages/account/account-close/index.vue'),
+    meta: {
+      title: '关帐检查',
+    },
+  },
+```
+
 ```
 ├── pages
 │  ├── account
