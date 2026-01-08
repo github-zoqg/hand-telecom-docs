@@ -279,4 +279,3 @@ Fiddler 支持第三方插件扩展功能：
 
 1. 学习 [常用功能](./common-features.md)
 2. 了解 [高级用法](./advanced-usage.md)
-3. 查看 [实战案例](./examples.md)

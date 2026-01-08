@@ -430,5 +430,3 @@ process chrome.exe
 掌握了常用功能后，你可以：
 
 1. 学习 [高级用法](./advanced-usage.md)
-2. 了解 [实战案例](./examples.md)
-3. 探索 [脚本编程](./scripting.md)

@@ -622,5 +622,3 @@ function generatePerformanceReport() {
 
 1. 深入学习 [FiddlerScript API](https://docs.telerik.com/fiddler/fiddlerscript-reference)
 2. 探索 [官方插件库](https://www.telerik.com/forums/fiddler)
-3. 查看 [实战案例](./examples.md)
-4. 了解 [最佳实践](./best-practices.md)
