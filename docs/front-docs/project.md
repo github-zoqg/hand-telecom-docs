@@ -72,7 +72,7 @@ sidebar_label: "项目须知"
 
 ## 本地开发指南
 
-项目使用微前端（qiankun），本地开发需启动`主、子`两种服务，[简化版使用文档](../knowledge/qiankun-readme)，[官方文档](https://qiankun.umijs.org/zh/guide)
+项目使用微前端（qiankun），本地开发需启动`主、子`两种服务，[简化版使用文档](./knowledge/qiankun-readme)，[官方文档](https://qiankun.umijs.org/zh/guide)
 
 1. 启动主应用`xcerp-app-front`
 2. 启动对应的子应用`xcerp-app-poc-front`或其他
