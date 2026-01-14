@@ -10,6 +10,7 @@ sidebar_label: "项目须知"
 ## 前端工作计划表
 
 - [2025 年前端工作计划](https://docs.qq.com/sheet/DWXNLVEx6S0xnQ3BX?tab=zdlc7w)
+- [2026 年前端工作计划](https://www.kdocs.cn/l/cqwNftNP6jQu)
 
 ## 仓库地址
 
@@ -19,7 +20,7 @@ sidebar_label: "项目须知"
 
 ## 测试环境及使用说明
 
-- [测试地址：http://xcerp-app-test.handteledev.com/](http://xcerp-app-test.handteledev.com/)
+1. [青浦环境地址：http://xcerp-app-test.handteledev.com/](http://xcerp-app-test.handteledev.com/)，对应分支：`test_qingpu`
 
 - 测试环境使用配置
 
@@ -60,6 +61,14 @@ sidebar_label: "项目须知"
 
 172.22.5.132     hand-telecom-docs.handteledev.com
 ```
+
+2. [tailscale 环境：http://192.168.110.69:3001/](http://192.168.110.69:3001/)，对应分支：`tailscale`
+
+3. 磐基环境
+
+- [dev 环境：http://172.21.205.103:40200/](http://172.21.205.103:40200/)，对应分支：`dev`
+- [test 环境：http://172.21.205.104:40210/](http://172.21.205.104:40210/)，对应分支：`test`
+- [uat 环境：http://172.21.205.113:40200/](http://172.21.205.113:40200/)，对应分支：`uat`
 
 ## 本地开发指南
 
