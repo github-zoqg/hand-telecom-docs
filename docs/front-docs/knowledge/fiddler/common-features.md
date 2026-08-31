@@ -232,7 +232,6 @@ Total Time: 410ms
 #### 设置断点
 
 1. **全局断点**:
-
    - 菜单：`Rules` → `Automatic Breakpoints`
    - 选择 `Before Requests` 或 `After Responses`
 
@@ -248,6 +247,7 @@ Total Time: 410ms
 3. **快速断点**:
    - 命令栏输入：`bpu api.example.com` (请求断点)
    - 命令栏输入：`bpafter api.example.com` (响应断点)
+   - 命令栏输入：`bpafter` (清除所有响应断点)
 
 #### 断点操作
 

@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master # 当你推送到main分支时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest # 使用Ubuntu操作系统运行
+    permissions:
+      contents: write # 添加写入权限
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # 检出代码
+        with:
+          persist-credentials: false # 防止权限问题
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v4 # 设置Node.js环境
+        with:
+          node-version: "24" # 使用Node.js版本14
+
+      - name: Install dependencies and build project
+        run: |
+          npm install  # 安装依赖
+          npm run build  # 构建项目，这里假设你的构建命令是`npm run build`，根据实际情况修改
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4 # 使用GitHub Pages部署动作
+        with:
+          branch: release # 部署到release分支
+          folder: dist # 指定dist目录作为部署内容，根据你的构建输出目录调整
+          create_branch: true # 如果分支不存在则自动创建
+          token: ${{ secrets.CICD }} # 显式指定token
