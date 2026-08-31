@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website=globalThis.webpackChunkmy_website||[]).push([[4771],{118:e=>{e.exports=JSON.parse('{"blogBasePath":"/hand-telecom-docs/blog2","blogTitle":"Blog","authorsListPath":"/hand-telecom-docs/blog2/authors"}')}}]);
