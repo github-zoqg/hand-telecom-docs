@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-front-docs/knowledge/fiddler/installation" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Fiddler 安装和配置 | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/front-docs/knowledge/fiddler/installation"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Fiddler 安装和配置 | My Site"><meta data-rh="true" name="description" content="系统要求"><meta data-rh="true" property="og:description" content="系统要求"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/front-docs/knowledge/fiddler/installation"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/front-docs/knowledge/fiddler/installation" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/front-docs/knowledge/fiddler/installation" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"知识库","item":"https://your-docusaurus-site.example.com/docs/category/知识库"},{"@type":"ListItem","position":2,"name":"Fiddler 使用指南","item":"https://your-docusaurus-site.example.com/docs/category/fiddler-使用指南"},{"@type":"ListItem","position":3,"name":"安装和配置","item":"https://your-docusaurus-site.example.com/docs/front-docs/knowledge/fiddler/installation"}]}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="My Site Atom Feed">
+
+
+
+
+<link rel="alternate" type="application/rss+xml" href="/blog2/rss.xml" title="My Site RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog2/atom.xml" title="My Site Atom Feed"><link rel="stylesheet" href="/assets/css/styles.9072f9ea.css">
+<script src="/assets/js/runtime~main.42484ef9.js" defer="defer"></script>
+<script src="/assets/js/main.40081942.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Hand-Telecom Site</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/front-docs/project">前端知识库</a><a class="navbar__item navbar__link" href="/docs2/">其他文档2</a><a class="navbar__item navbar__link" href="/blog">Blog</a><a class="navbar__item navbar__link" href="/blog2">博客2</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">更多资源</a><ul class="dropdown__menu"><li><a href="https://github.com/facebook/docusaurus/tree/main/examples" target="_blank" rel="noopener noreferrer" class="dropdown__link">示例项目<svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li><a class="dropdown__link" href="/docs/tutorial-basics/markdown-features">Markdown 特性</a></li></ul></div><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/front-docs/project"><span title="项目须知" class="linkLabel_WmDU">项目须知</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/docs/category/规范"><span title="规范" class="categoryLinkLabel_W154">规范</span></a><button aria-label="Expand sidebar category &#x27;规范&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/docs/category/知识库"><span title="知识库" class="categoryLinkLabel_W154">知识库</span></a><button aria-label="Collapse sidebar category &#x27;知识库&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/"><span title="知识库" class="linkLabel_WmDU">知识库</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/qiankun-readme"><span title="微前端-qiankun" class="linkLabel_WmDU">微前端-qiankun</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/architecture"><span title="网站架构工作流程" class="linkLabel_WmDU">网站架构工作流程</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex="0" href="/docs/category/cicd"><span title="CICD" class="categoryLinkLabel_W154">CICD</span></a><button aria-label="Expand sidebar category &#x27;CICD&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex="0" href="/docs/category/fiddler-使用指南"><span title="Fiddler 使用指南" class="categoryLinkLabel_W154">Fiddler 使用指南</span></a><button aria-label="Collapse sidebar category &#x27;Fiddler 使用指南&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/fiddler/introduction"><span title="Fiddler 简介" class="linkLabel_WmDU">Fiddler 简介</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/front-docs/knowledge/fiddler/installation"><span title="安装和配置" class="linkLabel_WmDU">安装和配置</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/fiddler/common-features"><span title="常用功能" class="linkLabel_WmDU">常用功能</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/front-docs/knowledge/fiddler/advanced-usage"><span title="高级用法" class="linkLabel_WmDU">高级用法</span></a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/front-docs/markdown-shortcuts"><span title="Markdown 快捷键指南" class="linkLabel_WmDU">Markdown 快捷键指南</span></a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/知识库"><span>知识库</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/docs/category/fiddler-使用指南"><span>Fiddler 使用指南</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">安装和配置</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Fiddler 安装和配置</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="系统要求">系统要求<a href="#系统要求" class="hash-link" aria-label="Direct link to 系统要求" title="Direct link to 系统要求" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fiddler-classic-windows">Fiddler Classic (Windows)<a href="#fiddler-classic-windows" class="hash-link" aria-label="Direct link to Fiddler Classic (Windows)" title="Direct link to Fiddler Classic (Windows)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>操作系统</strong>: Windows 7 SP1 或更高版本</li>
+<li class=""><strong>内存</strong>: 至少 2GB RAM</li>
+<li class=""><strong>磁盘空间</strong>: 100MB 可用空间</li>
+<li class=""><strong>.NET Framework</strong>: 4.6.1 或更高版本</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="fiddler-everywhere-跨平台">Fiddler Everywhere (跨平台)<a href="#fiddler-everywhere-跨平台" class="hash-link" aria-label="Direct link to Fiddler Everywhere (跨平台)" title="Direct link to Fiddler Everywhere (跨平台)" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>操作系统</strong>: Windows 10+, macOS 10.14+, Ubuntu 18.04+</li>
+<li class=""><strong>内存</strong>: 至少 4GB RAM</li>
+<li class=""><strong>磁盘空间</strong>: 500MB 可用空间</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="下载和安装">下载和安装<a href="#下载和安装" class="hash-link" aria-label="Direct link to 下载和安装" title="Direct link to 下载和安装" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-下载-fiddler">1. 下载 Fiddler<a href="#1-下载-fiddler" class="hash-link" aria-label="Direct link to 1. 下载 Fiddler" title="Direct link to 1. 下载 Fiddler" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="官方网站下载">官方网站下载<a href="#官方网站下载" class="hash-link" aria-label="Direct link to 官方网站下载" title="Direct link to 官方网站下载" translate="no">​</a></h4>
+<ol>
+<li class="">访问 <a href="https://www.telerik.com/fiddler" target="_blank" rel="noopener noreferrer" class="">Fiddler 官方网站</a></li>
+<li class="">选择合适的版本：<!-- -->
+<ul>
+<li class=""><strong>Fiddler Classic</strong> (免费，仅 Windows)</li>
+<li class=""><strong>Fiddler Everywhere</strong> (付费，跨平台)</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="直接下载链接">直接下载链接<a href="#直接下载链接" class="hash-link" aria-label="Direct link to 直接下载链接" title="Direct link to 直接下载链接" translate="no">​</a></h4>
+<ul>
+<li class=""><a href="https://www.telerik.com/download/fiddler" target="_blank" rel="noopener noreferrer" class="">Fiddler Classic 下载</a></li>
+<li class=""><a href="https://www.telerik.com/products/fiddler/fiddler-everywhere.aspx" target="_blank" rel="noopener noreferrer" class="">Fiddler Everywhere 下载</a></li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-安装步骤">2. 安装步骤<a href="#2-安装步骤" class="hash-link" aria-label="Direct link to 2. 安装步骤" title="Direct link to 2. 安装步骤" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="windows-fiddler-classic">Windows (Fiddler Classic)<a href="#windows-fiddler-classic" class="hash-link" aria-label="Direct link to Windows (Fiddler Classic)" title="Direct link to Windows (Fiddler Classic)" translate="no">​</a></h4>
+<ol>
+<li class="">运行下载的 <code>.exe</code> 安装文件</li>
+<li class="">选择安装路径（建议使用默认路径）</li>
+<li class="">选择安装组件：<!-- -->
+<ul>
+<li class="">✅ Fiddler Core (必需)</li>
+<li class="">✅ Fiddler 主程序</li>
+<li class="">✅ 桌面快捷方式</li>
+<li class="">✅ 开始菜单项</li>
+</ul>
+</li>
+<li class="">点击 &quot;Install&quot; 开始安装</li>
+<li class="">等待安装完成</li>
+<li class="">启动 Fiddler</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="跨平台安装-fiddler-everywhere">跨平台安装 (Fiddler Everywhere)<a href="#跨平台安装-fiddler-everywhere" class="hash-link" aria-label="Direct link to 跨平台安装 (Fiddler Everywhere)" title="Direct link to 跨平台安装 (Fiddler Everywhere)" translate="no">​</a></h4>
+<ol>
+<li class="">
+<p>下载对应平台的安装包：</p>
+<ul>
+<li class="">Windows: <code>.exe</code> 文件</li>
+<li class="">macOS: <code>.dmg</code> 文件</li>
+<li class="">Linux: <code>.AppImage</code> 或 <code>.deb</code> 文件</li>
+</ul>
+</li>
+<li class="">
+<p>安装步骤：</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain"># Linux Ubuntu/Debian</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo dpkg -i fiddler-everywhere_*.deb</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># 修复依赖问题（如果需要）</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install -f</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"># Linux AppImage</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">chmod +x fiddler-everywhere*.AppImage</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">./fiddler-everywhere*.AppImage</span><br></span></code></pre></div></div>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="初始配置">初始配置<a href="#初始配置" class="hash-link" aria-label="Direct link to 初始配置" title="Direct link to 初始配置" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-首次启动设置">1. 首次启动设置<a href="#1-首次启动设置" class="hash-link" aria-label="Direct link to 1. 首次启动设置" title="Direct link to 1. 首次启动设置" translate="no">​</a></h3>
+<p>启动 Fiddler 后，会看到以下配置界面：</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="语言设置">语言设置<a href="#语言设置" class="hash-link" aria-label="Direct link to 语言设置" title="Direct link to 语言设置" translate="no">​</a></h4>
+<ul>
+<li class="">默认语言：英语</li>
+<li class="">可选择中文（如果可用）</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="主题设置">主题设置<a href="#主题设置" class="hash-link" aria-label="Direct link to 主题设置" title="Direct link to 主题设置" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>Light Theme</strong>: 浅色主题</li>
+<li class=""><strong>Dark Theme</strong>: 深色主题</li>
+<li class=""><strong>System Theme</strong>: 跟随系统主题</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="更新设置">更新设置<a href="#更新设置" class="hash-link" aria-label="Direct link to 更新设置" title="Direct link to 更新设置" translate="no">​</a></h4>
+<ul>
+<li class="">✅ 自动检查更新</li>
+<li class="">✅ 参与用户体验改进计划（可选）</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-网络配置">2. 网络配置<a href="#2-网络配置" class="hash-link" aria-label="Direct link to 2. 网络配置" title="Direct link to 2. 网络配置" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="代理设置">代理设置<a href="#代理设置" class="hash-link" aria-label="Direct link to 代理设置" title="Direct link to 代理设置" translate="no">​</a></h4>
+<p>Fiddler 默认会自动配置系统代理：</p>
+<ol>
+<li class="">
+<p><strong>检查代理状态</strong></p>
+<ul>
+<li class="">点击 <code>Tools</code> → <code>Options</code> → <code>Connections</code></li>
+<li class="">确认 &quot;Allow remote computers to connect&quot; 已勾选</li>
+</ul>
+</li>
+<li class="">
+<p><strong>代理端口设置</strong></p>
+<ul>
+<li class="">默认端口：8888</li>
+<li class="">可根据需要修改（避免与其他服务冲突）</li>
+</ul>
+</li>
+</ol>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="https-解密配置">HTTPS 解密配置<a href="#https-解密配置" class="hash-link" aria-label="Direct link to HTTPS 解密配置" title="Direct link to HTTPS 解密配置" translate="no">​</a></h4>
+<p>这是 Fiddler 最重要的配置之一：</p>
+<ol>
+<li class="">
+<p><strong>启用 HTTPS 解密</strong></p>
+<ul>
+<li class="">点击 <code>Tools</code> → <code>Options</code> → <code>HTTPS</code></li>
+<li class="">✅ 勾选 &quot;Decrypt HTTPS traffic&quot;</li>
+<li class="">✅ 勾选 &quot;Ignore server certificate errors&quot;</li>
+</ul>
+</li>
+<li class="">
+<p><strong>安装根证书</strong></p>
+<ul>
+<li class="">点击 &quot;Actions&quot; → &quot;Trust Root Certificate&quot;</li>
+<li class="">在弹出的安全警告中点击 &quot;是&quot;</li>
+<li class="">证书将安装到 &quot;受信任的根证书颁发机构&quot;</li>
+</ul>
+</li>
+<li class="">
+<p><strong>浏览器证书配置</strong></p>
+<ul>
+<li class="">Chrome/Edge: 自动使用系统证书</li>
+<li class="">Firefox: 需要手动导入证书</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-浏览器配置">3. 浏览器配置<a href="#3-浏览器配置" class="hash-link" aria-label="Direct link to 3. 浏览器配置" title="Direct link to 3. 浏览器配置" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="chromeedge">Chrome/Edge<a href="#chromeedge" class="hash-link" aria-label="Direct link to Chrome/Edge" title="Direct link to Chrome/Edge" translate="no">​</a></h4>
+<ul>
+<li class="">自动使用系统代理设置</li>
+<li class="">无需额外配置</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="firefox">Firefox<a href="#firefox" class="hash-link" aria-label="Direct link to Firefox" title="Direct link to Firefox" translate="no">​</a></h4>
+<ol>
+<li class="">打开 Firefox 设置</li>
+<li class="">搜索 &quot;代理&quot;</li>
+<li class="">选择 &quot;手动代理配置&quot;</li>
+<li class="">设置：<!-- -->
+<ul>
+<li class="">HTTP 代理：127.0.0.1</li>
+<li class="">端口：8888</li>
+<li class="">✅ 勾选 &quot;对此代理使用 HTTPS&quot;</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="移动设备配置">移动设备配置<a href="#移动设备配置" class="hash-link" aria-label="Direct link to 移动设备配置" title="Direct link to 移动设备配置" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="ios-设备">iOS 设备<a href="#ios-设备" class="hash-link" aria-label="Direct link to iOS 设备" title="Direct link to iOS 设备" translate="no">​</a></h3>
+<ol>
+<li class="">确保 iOS 设备和运行 Fiddler 的电脑在同一网络</li>
+<li class="">获取电脑 IP 地址：<!-- -->
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">ipconfig</span><br></span></code></pre></div></div>
+</li>
+<li class="">在 iOS 设备上：<!-- -->
+<ul>
+<li class="">设置 → 无线局域网 → 点击当前 WiFi 的 (i)</li>
+<li class="">HTTP 代理 → 配置代理 → 手动</li>
+<li class="">服务器：电脑 IP 地址</li>
+<li class="">端口：8888</li>
+</ul>
+</li>
+<li class="">安装证书：<!-- -->
+<ul>
+<li class="">在 Safari 中访问 <code>http://电脑IP:8888</code></li>
+<li class="">点击 &quot;FiddlerRoot certificate&quot;</li>
+<li class="">安装证书</li>
+<li class="">设置 → 通用 → 关于本机 → 证书信任设置</li>
+<li class="">启用 Fiddler 根证书</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="android-设备">Android 设备<a href="#android-设备" class="hash-link" aria-label="Direct link to Android 设备" title="Direct link to Android 设备" translate="no">​</a></h3>
+<ol>
+<li class="">获取电脑 IP 地址</li>
+<li class="">在 Android 设备上：<!-- -->
+<ul>
+<li class="">长按 WiFi 网络 → 修改网络</li>
+<li class="">高级选项 → 代理 → 手动</li>
+<li class="">代理主机名：电脑 IP 地址</li>
+<li class="">代理端口：8888</li>
+</ul>
+</li>
+<li class="">安装证书：<!-- -->
+<ul>
+<li class="">浏览器访问 <code>http://电脑IP:8888</code></li>
+<li class="">下载 FiddlerRoot.cer</li>
+<li class="">设置 → 安全 → 加密与凭据 → 安装证书 → Wi-Fi 证书</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="常见问题解决">常见问题解决<a href="#常见问题解决" class="hash-link" aria-label="Direct link to 常见问题解决" title="Direct link to 常见问题解决" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-无法捕获-https-流量">1. 无法捕获 HTTPS 流量<a href="#1-无法捕获-https-流量" class="hash-link" aria-label="Direct link to 1. 无法捕获 HTTPS 流量" title="Direct link to 1. 无法捕获 HTTPS 流量" translate="no">​</a></h3>
+<p><strong>问题</strong>: Fiddler 只显示 HTTP 请求，不显示 HTTPS 请求</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li class="">检查 HTTPS 解密是否启用</li>
+<li class="">重新安装 Fiddler 根证书</li>
+<li class="">重启浏览器和 Fiddler</li>
+<li class="">检查目标应用是否使用了证书固定</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-代理连接失败">2. 代理连接失败<a href="#2-代理连接失败" class="hash-link" aria-label="Direct link to 2. 代理连接失败" title="Direct link to 2. 代理连接失败" translate="no">​</a></h3>
+<p><strong>问题</strong>: 浏览器无法通过 Fiddler 访问网络</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li class="">检查 Fiddler 是否正在运行</li>
+<li class="">确认代理设置正确（127.0.0.1:8888）</li>
+<li class="">检查防火墙设置</li>
+<li class="">重启 Fiddler 和浏览器</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-证书安装失败">3. 证书安装失败<a href="#3-证书安装失败" class="hash-link" aria-label="Direct link to 3. 证书安装失败" title="Direct link to 3. 证书安装失败" translate="no">​</a></h3>
+<p><strong>问题</strong>: 无法安装 Fiddler 根证书</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li class="">以管理员身份运行 Fiddler</li>
+<li class="">检查系统权限设置</li>
+<li class="">手动导入证书到信任存储</li>
+<li class="">在组策略中允许用户安装证书</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-移动设备无法连接">4. 移动设备无法连接<a href="#4-移动设备无法连接" class="hash-link" aria-label="Direct link to 4. 移动设备无法连接" title="Direct link to 4. 移动设备无法连接" translate="no">​</a></h3>
+<p><strong>问题</strong>: 手机无法通过 Fiddler 上网</p>
+<p><strong>解决方案</strong>:</p>
+<ol>
+<li class="">确认设备和电脑在同一网络</li>
+<li class="">检查 IP 地址和端口设置</li>
+<li class="">在 Fiddler 中启用远程连接</li>
+<li class="">检查防火墙是否阻止连接</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="高级配置">高级配置<a href="#高级配置" class="hash-link" aria-label="Direct link to 高级配置" title="Direct link to 高级配置" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-自定义规则">1. 自定义规则<a href="#1-自定义规则" class="hash-link" aria-label="Direct link to 1. 自定义规则" title="Direct link to 1. 自定义规则" translate="no">​</a></h3>
+<p>通过 <code>FiddlerScript</code> 可以自定义 Fiddler 行为：</p>
+<ol>
+<li class="">点击 <code>Rules</code> → <code>Customize Rules</code></li>
+<li class="">在打开的编辑器中编写脚本</li>
+<li class="">保存脚本后立即生效</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-插件安装">2. 插件安装<a href="#2-插件安装" class="hash-link" aria-label="Direct link to 2. 插件安装" title="Direct link to 2. 插件安装" translate="no">​</a></h3>
+<p>Fiddler 支持第三方插件扩展功能：</p>
+<ol>
+<li class="">下载插件文件</li>
+<li class="">放置在 Fiddler 安装目录的 <code>Importers</code> 文件夹</li>
+<li class="">重启 Fiddler</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-性能优化">3. 性能优化<a href="#3-性能优化" class="hash-link" aria-label="Direct link to 3. 性能优化" title="Direct link to 3. 性能优化" translate="no">​</a></h3>
+<p>对于大量流量处理，可以进行以下优化：</p>
+<ol>
+<li class="">
+<p><strong>增加缓冲区大小</strong></p>
+<ul>
+<li class=""><code>Tools</code> → <code>Options</code> → <code>Tools</code></li>
+<li class="">调整 &quot;Maximum request/response body size&quot;</li>
+</ul>
+</li>
+<li class="">
+<p><strong>禁用不必要的功能</strong></p>
+<ul>
+<li class="">关闭自动保存</li>
+<li class="">减少日志保留时间</li>
+<li class="">禁用流量统计</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="配置备份">配置备份<a href="#配置备份" class="hash-link" aria-label="Direct link to 配置备份" title="Direct link to 配置备份" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="导出配置">导出配置<a href="#导出配置" class="hash-link" aria-label="Direct link to 导出配置" title="Direct link to 导出配置" translate="no">​</a></h3>
+<ol>
+<li class=""><code>File</code> → <code>Export</code> → <code>All Sessions</code></li>
+<li class="">选择保存位置</li>
+<li class="">导出的 <code>.saz</code> 文件包含所有配置</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="导入配置">导入配置<a href="#导入配置" class="hash-link" aria-label="Direct link to 导入配置" title="Direct link to 导入配置" translate="no">​</a></h3>
+<ol>
+<li class=""><code>File</code> → <code>Import</code> → <code>Sessions</code></li>
+<li class="">选择之前导出的 <code>.saz</code> 文件</li>
+<li class="">配置将自动恢复</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="下一步">下一步<a href="#下一步" class="hash-link" aria-label="Direct link to 下一步" title="Direct link to 下一步" translate="no">​</a></h2>
+<p>完成安装和配置后，你可以：</p>
+<ol>
+<li class="">学习 <a class="" href="/docs/front-docs/knowledge/fiddler/common-features">常用功能</a></li>
+<li class="">了解 <a class="" href="/docs/front-docs/knowledge/fiddler/advanced-usage">高级用法</a></li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/front-docs/knowledge/fiddler/installation.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/front-docs/knowledge/fiddler/introduction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Fiddler 简介</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/front-docs/knowledge/fiddler/common-features"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">常用功能</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#系统要求" class="table-of-contents__link toc-highlight">系统要求</a><ul><li><a href="#fiddler-classic-windows" class="table-of-contents__link toc-highlight">Fiddler Classic (Windows)</a></li><li><a href="#fiddler-everywhere-跨平台" class="table-of-contents__link toc-highlight">Fiddler Everywhere (跨平台)</a></li></ul></li><li><a href="#下载和安装" class="table-of-contents__link toc-highlight">下载和安装</a><ul><li><a href="#1-下载-fiddler" class="table-of-contents__link toc-highlight">1. 下载 Fiddler</a></li><li><a href="#2-安装步骤" class="table-of-contents__link toc-highlight">2. 安装步骤</a></li></ul></li><li><a href="#初始配置" class="table-of-contents__link toc-highlight">初始配置</a><ul><li><a href="#1-首次启动设置" class="table-of-contents__link toc-highlight">1. 首次启动设置</a></li><li><a href="#2-网络配置" class="table-of-contents__link toc-highlight">2. 网络配置</a></li><li><a href="#3-浏览器配置" class="table-of-contents__link toc-highlight">3. 浏览器配置</a></li></ul></li><li><a href="#移动设备配置" class="table-of-contents__link toc-highlight">移动设备配置</a><ul><li><a href="#ios-设备" class="table-of-contents__link toc-highlight">iOS 设备</a></li><li><a href="#android-设备" class="table-of-contents__link toc-highlight">Android 设备</a></li></ul></li><li><a href="#常见问题解决" class="table-of-contents__link toc-highlight">常见问题解决</a><ul><li><a href="#1-无法捕获-https-流量" class="table-of-contents__link toc-highlight">1. 无法捕获 HTTPS 流量</a></li><li><a href="#2-代理连接失败" class="table-of-contents__link toc-highlight">2. 代理连接失败</a></li><li><a href="#3-证书安装失败" class="table-of-contents__link toc-highlight">3. 证书安装失败</a></li><li><a href="#4-移动设备无法连接" class="table-of-contents__link toc-highlight">4. 移动设备无法连接</a></li></ul></li><li><a href="#高级配置" class="table-of-contents__link toc-highlight">高级配置</a><ul><li><a href="#1-自定义规则" class="table-of-contents__link toc-highlight">1. 自定义规则</a></li><li><a href="#2-插件安装" class="table-of-contents__link toc-highlight">2. 插件安装</a></li><li><a href="#3-性能优化" class="table-of-contents__link toc-highlight">3. 性能优化</a></li></ul></li><li><a href="#配置备份" class="table-of-contents__link toc-highlight">配置备份</a><ul><li><a href="#导出配置" class="table-of-contents__link toc-highlight">导出配置</a></li><li><a href="#导入配置" class="table-of-contents__link toc-highlight">导入配置</a></li></ul></li><li><a href="#下一步" class="table-of-contents__link toc-highlight">下一步</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
