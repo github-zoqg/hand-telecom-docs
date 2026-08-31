@@ -10,7 +10,7 @@ sidebar_label: "项目须知"
 ## 前端工作计划表
 
 - [2025 年前端工作计划](https://docs.qq.com/sheet/DWXNLVEx6S0xnQ3BX?tab=zdlc7w)
-- [2026 年前端工作计划](https://www.kdocs.cn/l/cqwNftNP6jQu)
+- [2026 年前端工作计划](https://docs.qq.com/sheet/DWVFjd2h1Z0xqUGVL)
 
 ## 仓库地址
 
@@ -25,50 +25,20 @@ sidebar_label: "项目须知"
 - 测试环境使用配置
 
 > 1. 下载并登录青浦 vpn（账号需要申请）
-> 2. 配置 hosts
-
-```
-172.22.5.132     sys.handteledev.com
-172.22.5.132     xwbi.handteledev.com
-172.22.5.132     api.handteledev.com
-172.22.5.132     register.handteledev.com
-172.22.5.132     swagger.handteledev.com
-172.22.5.132     app.handteledev.com
-172.22.5.132     huhu.handteledev.com
-
-172.22.5.132     xcerp-app.handteledev.com
-172.22.5.132     xcerp-app-test.handteledev.com
-
-172.22.5.132     xcerp-app-poc.handteledev.com
-172.22.5.132     xcerp-poc-test.handteledev.com
-172.22.5.132     xcerp-poc.handteledev.com
-
-172.22.5.132     xcerp-app-cac.handteledev.com
-172.22.5.132     xcerp-cac-test.handteledev.com
-172.22.5.132     xcerp-cac.handteledev.com
-
-172.22.5.132     xcerp-app-glc.handteledev.com
-172.22.5.132     xcerp-glc-test.handteledev.com
-172.22.5.132     xcerp-glc.handteledev.com
-
-172.22.5.132     xcerp-app-apc.handteledev.com
-172.22.5.132     xcerp-apc-test.handteledev.com
-172.22.5.132     xcerp-apc.handteledev.com
-
-172.22.5.132     xcerp-app-sac.handteledev.com
-172.22.5.132     xcerp-sac-test.handteledev.com
-172.22.5.132     xcerp-sac.handteledev.com
-
-172.22.5.132     hand-telecom-docs.handteledev.com
-```
+> 2. 配置 hosts (找人copy一份)
 
 2. [tailscale 环境：http://192.168.110.69:3001/](http://192.168.110.69:3001/)，对应分支：`tailscale`
 
-3. 磐基环境
+3. 重庆磐基环境
 
 - [dev 环境：http://172.21.205.103:40200/](http://172.21.205.103:40200/)，对应分支：`dev`
 - [test 环境：http://172.21.205.104:40210/](http://172.21.205.104:40210/)，对应分支：`test`
 - [uat 环境：http://172.21.205.113:40200/](http://172.21.205.113:40200/)，对应分支：`uat`
+
+4. 生产环境地址：
+
+- [919生产环境地址：http://172.21.205.112/](http://172.21.205.112/)，对应分支：`prd`
+- [工具生产环境地址：http://172.21.205.112/prt-tool/](http://172.21.205.112/prt-tool/)，对应分支：`prd`
 
 ## 本地开发指南
 
