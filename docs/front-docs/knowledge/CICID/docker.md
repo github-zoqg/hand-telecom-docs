@@ -9,7 +9,6 @@ sidebar_label: "Dockerfile"
 # #设置构建镜像☆☆☆☆☆☆☆☆☆☆根据工程构建需要配置带有相应环境的构建用途镜像☆☆☆☆☆☆☆☆☆☆
 
 FROM artifactory.dep.devops.cmit.cloud:20101/xcerp-dev-app-image/node:20.18.1 AS builder
-#FROM artifactory.dep.devops.cmit.cloud:20101/xcerp-dev-app-image/node:20.19.5-linuxarm64 AS builder
 
 # 接收构建参数
 
@@ -116,19 +115,17 @@ RUN . /etc/environment && npm publish dist_*.tar.gz --registry=${NPM_REGISTRY}
 
 #==========================================================================
 
-# #设置基础镜像☆☆☆☆☆☆☆☆☆☆根据工程运行需要配置带有相应环境的运行用途镜像☆☆☆☆☆☆☆☆☆☆
+#设置基础镜像☆☆☆☆☆☆☆☆☆☆根据工程运行需要配置带有相应环境的运行用途镜像☆☆☆☆☆☆☆☆☆☆
 
-#FROM artifactory.dep.devops.cmit.cloud:20101/cdy_application_factory/nginx:stable-alpine AS final
-#FROM artifactory.dep.devops.cmit.cloud:20101/tools/base-images/nginx:alpine AS final
+FROM artifactory.dep.devops.cmit.cloud:20101/tools/base-images/nginx:alpine AS final
 
-# #将构建镜像中代码的nginx配置文件拷贝至运行镜像nginx目录（默认不开启，nginx有特殊配置注意开启）
+#将构建镜像中代码的nginx配置文件拷贝至运行镜像nginx目录（默认不开启，nginx有特殊配置注意开启）
 
-#RUN mkdir -p /usr/share/nginx/html/
-#COPY --from=builder /webapp/dist/ /usr/share/nginx/dist-pc/dist/
+RUN mkdir -p /usr/share/nginx/html/
 
-# #☆☆☆☆☆☆☆☆☆☆将构建镜像中打好的dist目录拷贝至运行镜像nginx目录☆☆☆☆☆☆☆☆☆☆
+#☆☆☆☆☆☆☆☆☆☆将构建镜像中打好的dist目录拷贝至运行镜像nginx目录☆☆☆☆☆☆☆☆☆☆
 
-#COPY --from=builder /webapp/dist /usr/share/nginx/html/
+COPY --from=builder /webapp/dist /usr/share/nginx/html/
 
-#RUN chmod -R 777 /usr/share/nginx/html
+RUN chmod -R 777 /usr/share/nginx/html
 ```

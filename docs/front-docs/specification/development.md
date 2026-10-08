@@ -34,9 +34,9 @@ sidebar_label: "开发规范"
 
 ```js
   {
-    path: '/appGlcFront/account/accountClose',
+    path: '/appGlcFront/account/close',
     name: 'closeLedgerCheck',
-    component: () => import('~/pages/account/account-close/index.vue'),
+    component: () => import('~/pages/account/close/index.vue'),
     meta: {
       title: '关帐检查',
     },
@@ -46,7 +46,7 @@ sidebar_label: "开发规范"
 ```
 ├── pages
 │  ├── account
-│  │  ├── account-close
+│  │  ├── close
 │  │  │  ├── components
 │  │  │  │  ├── CloseAccountForm.vue
 │  │  │  │  ├── CloseAccountTable.vue
